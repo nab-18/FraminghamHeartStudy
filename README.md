@@ -28,3 +28,21 @@ We used confusion matrices to determine which models were struggling with which 
 ## Analyses and Conclusion
 
 Using the Framingham Heart Study, this project aimed to predict the outcome of a particular patient based on the recorded features. We conducted our exploratory data analysis and found that our target variable had 2 unbalanced classes. We also eliminated features that would result in data leakage or redundancy by using correlation plots. We created 3 models to compare: an XGBoost Classifier, a Random Forest Classifier and a Logistic Regression model. Bayesian Hyperparameter Optimisation was conducted using HyperOpt. Results found that the XGBoost model took the longest to optimise and the logistic regression took the shortest. The XGBoost outperformed both models by a small amount and the Logistic Regression model came second. However, noting that the dataset was not very big and the Logisitic Regression took less time to optimise, we cannot conclude that the XGBoost Classifier was a better model. The SHAPley explanations were conducted on the XGBoost model and it found that Age was the biggest factor that influenced death. In conjunction with period, the occurrence of Angina Pectoris, Myocardial Infarction, Heart Failure, and Cerebrovascular disease would be a notable factor to consider when prioritising patients. This project could have been improved by adding different models and assessing their effectiveness. Furthermore, a comprehensive review could be conducted to get a better understanding of the features and their interactions. The project could be applied to contemporary fields in numerous ways. We determined which factors affect the possibility of death and thus can focus resources and time into minimising these issues. Furthermore, patients with these issues could be prioritised to reduce their possibility of death.
+
+## References
+
+Barla, N. (2024) How to do Model Visualization in machine learning?, neptune.ai. Available at: https://neptune.ai/blog/visualization-in-machine-learning#:~:text=Machine%20learning%20visualization%20(ML%20visualization,through%20graphical%20or%20interactive%20means. (Accessed: 25 May 2024). 
+
+Dataman, C.K. (2023) Explain your model with the shap values, Medium. Available at: https://medium.com/dataman-in-ai/explain-your-model-with-the-shap-values-bc36aac4de3d (Accessed: 10 June 2024). 
+
+Hyperopt: Distributed asynchronous hyper-parameter optimization (no date) Hyperopt Documentation. Available at: http://hyperopt.github.io/hyperopt/ (Accessed: 25 June 2024). 
+
+Jain, A. (2024) Mastering xgboost parameters tuning: A complete guide with python codes, Analytics Vidhya. Available at: https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/ (Accessed: 25 June 2024). 
+
+Koehrsen, W. (2018) Hyperparameter tuning the random forest in python, Medium. Available at: https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74 (Accessed: 15 June 2024). 
+
+Labs, D.D. (2017) Parameter tuning with Hyperopt, Medium. Available at: https://medium.com/district-data-labs/parameter-tuning-with-hyperopt-faa86acdfdce (Accessed: 20 June 2024). 
+
+Shap (no date) Shap/SHAP: A game theoretic approach to explain the output of any machine learning model., GitHub. Available at: https://github.com/shap/shap (Accessed: 25 June 2024). 
+
+The ‘framingham’ data set (no date) R. Available at: https://search.r-project.org/CRAN/refmans/riskCommunicator/html/framingham.html (Accessed: 25 May 2024). 
